@@ -1,8 +1,12 @@
-const buttonEx1 = document.getElementById ("exercicio1")
+const buttonEX1 = document.getElementById("EX1")
 
-buttonEx1.addEventListener ("click", () => {
-    const num1 =  Number(prompt("informe um número"))
-    const num2 =  Number(prompt("informe outro número"))
+buttonEX1.addEventListener("click", () => {
+    const num1Input = document.getElementById ("num1");
+    const num2Input = document.getElementById ("num2");
+    const resultado = document.getElementById ("resultado")
+   
+    resultado.textContent = Number (num1Input.value) + Number (num2Input.value)
 
-    alert (num1 + num2)
+
+
 })
